@@ -28,5 +28,15 @@
 ## .github/workflows/main.yml
 > Copilot works on more than just traditional code. Even with operational tasks and files, Copilot can help.
 
-1. On a new line, write the comment "Log into Azure"
-1. tab
+1. create a file main.yml
+1. ask copilot chat to "write me a starter github actions file"
+
+## sql.py
+> Copilot can help identify and mitigate security vulnerabilities
+
+1. ask copilot chat to identify any security vulnerabilities it sees
+
+
+## FAQ
+1. How does GitHub Copilot Chat differ from ChatGPT?
+  - GitHub Copilot chat takes into consideration the coxtext of your codebase and workspace, giveing you more tailored soltinos grounded in the code that you've already written. ChatGPT does not do this.
