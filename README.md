@@ -5,6 +5,7 @@
 
 ### class point
 1. start a new comment "create a class"
+    > If the suggestions are wrong or I don't like them, just keep typing!
 1. tab (to autocomplete)
 1. on the next line type "class"
 1. tab
