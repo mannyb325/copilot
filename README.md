@@ -7,7 +7,7 @@
 1. start a new comment "create a class"
     > If the suggestions are wrong or I don't like them, just keep typing!
 1. tab (to autocomplete)
-1. on the next line type "class"
+1. on the next line type "class Point:"
 1. tab
     > GitHub Copilot draws on information from our workspace, so it is inferring what we want based on what we have already done and what it can see in other open files. in this case, file name is part of it.
 1. write a new comment "tostring method"
@@ -24,6 +24,17 @@
 1. on the next line type "class"
 1. tab
     > copilot will essentially use all the workspace context, including code we've already written in this file, to determine how to generate new code. notice how copilot automatically added a tostring method (following a pattern it recognized from above) and it utilizes the distance method we defined automatically.
+
+## new / complex code
+
+1. open server.rs
+1. ask copilot chat what this file is doing
+1. ask copilot chat it if there are any ways we can improve the code
+1. ask chat how to implement thread pools and accept changes
+
+## from direction to development
+
+
 
 ## .github/workflows/main.yml
 > Copilot works on more than just traditional code. Even with operational tasks and files, Copilot can help.
