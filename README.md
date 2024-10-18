@@ -1,5 +1,15 @@
 # copilot
 
+## Installation (for VS Code)
+1. Go to Extensions (on Activity Bar)
+1. Search for `Copilot`
+1. Install
+    > You will get both `Copilot` and `Copilot Chat`
+1. Using either the pop-up after install or the "Accounts" icon on the Activity Bar, sign into GitHub
+1. Done!
+
+Easy as that!
+
 ## point.py
 1. create a file called point.py
 
