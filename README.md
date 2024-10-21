@@ -1,5 +1,8 @@
 # copilot
 
+> [!NOTE]
+> As with any GenAI, Copilot is non-deterministic. As such, results you get from Copilot may differ from what I demonstrate.
+
 ## Install (for VS Code)
 1. Go to Extensions (on Activity Bar)
 1. Search for `Copilot`
@@ -16,6 +19,37 @@ That's all!
 
 ## Use
 > at some point show writing boilerplate like Colin did. In the point class, accept all the values and the getters, setters, etc.
+
+What to show:
+
+### Inline <!-- 5 min -->
+### Chat <!-- 10 min -->
+#### Explain
+1. open server.rs
+1. ask copilot chat what this file is doing
+<!-- maybe show #file:server.rs here and show just highlighting and open windows -->
+#### Improve
+1. ask copilot chat it if there are any ways we can improve the code
+<!-- maybe talk here about how being specific in our prompt will help give more accurate, reliable answers. the less vague our ask, the better -->
+<!-- ex. how could I improve this file? I want to make this code run as efficiently as possible and I want to follow best practices -->
+1. ask chat how to implement thread pools and accept changes
+<!-- this is a good time to show the full overwrite, vs copy paste -->
+
+#### Translate
+1. ask copilot chat to turn our rust code into python
+
+#### Brainstorm
+1. ask copilot chat: if I'm looking to create a webserver in python, how should I go about it? should I be creating it from scratch like I'm doing here?
+1. ask it about the differences between the different frameworks it suggests.
+1. ask it which to use if I'm looking to run a simple blog server and I don't have much coding experience.
+
+### @, # and / <!-- 5 min -->
+
+
+
+
+
+
 
 ## point.py
 1. create a file called point.py
