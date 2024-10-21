@@ -1,14 +1,21 @@
 # copilot
 
-## Installation (for VS Code)
+## Install (for VS Code)
 1. Go to Extensions (on Activity Bar)
 1. Search for `Copilot`
 1. Install
-    > You will get both `Copilot` and `Copilot Chat`
+    > You will get both the `Copilot` and `Copilot Chat` extensions installed
 1. Using either the pop-up after install or the "Accounts" icon on the Activity Bar, sign into GitHub
-1. Done!
 
 Easy as that!
+
+## Familiarize
+After install, Copilot is 100% ready to go. Start coding to use inline completions or click the "Chat" icon on the Activity Bar to chat.
+
+That's all!
+
+## Use
+> at some point show writing boilerplate like Colin did. In the point class, accept all the values and the getters, setters, etc.
 
 ## point.py
 1. create a file called point.py
