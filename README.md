@@ -45,6 +45,22 @@ What to show:
 
 ### @, # and / <!-- 5 min -->
 
+#### \#
+We can use `#` to reference files or selections. Essentially, determine what context to use to answer the question we are asking. Note; #web for web search.
+
+1. Try this in chat: 
+    - #what is the latest version of Node.js?
+1. then try this
+    - #web what is the latest version of Node.js?
+
+#### @
+Called "participants". Use if you're looking to ask about a specific topic or domain. Example @docker. Copilot extensions can also provide more chat participants. Personally I don't use it much but it's there!
+
+#### /
+Short hand for common tasks in Copilot. So that I don't have to type out a full paragraph.
+- /tests - writes tests
+- /explain - explain code
+- /fix - fix errors
 
 
 
@@ -106,3 +122,6 @@ What to show:
 ## FAQ
 1. How does GitHub Copilot Chat differ from ChatGPT?
   - GitHub Copilot chat takes into consideration the coxtext of your codebase and workspace, giveing you more tailored soltinos grounded in the code that you've already written. ChatGPT does not do this.
+
+## Best Practices
+https://docs.github.com/en/copilot/using-github-copilot/best-practices-for-using-github-copilot
