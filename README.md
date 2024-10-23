@@ -26,6 +26,7 @@ What to show:
 <!--
 Hit on:
 - context (file name, existing code, etc.)
+  - maybe mention what is used as context and what is not
 - how to accept suggestions (tab)
 - how to flip through suggestions
 - encourages commenting
@@ -34,9 +35,6 @@ Hit on:
 
 Not sure if I should hit on:
 - writing unit tests
-
-
-
 -->
 #### point.py
 1. create a file called point.py
@@ -66,9 +64,9 @@ Not sure if I should hit on:
 1. tab
     > copilot will essentially use all the workspace context, including code we've already written in this file, to determine how to generate new code. notice how copilot automatically added a tostring method (following a pattern it recognized from above) and it utilizes the distance method we defined automatically.
 
-##### from direction to development
+<!-- ##### from direction to development
 1. write a new comment "unit test function to verify line.length == point.distance"
-1. hit enter and press tab
+1. hit enter and press tab -->
 
 ### Chat <!-- 10 min -->
 #### Explain
@@ -124,7 +122,7 @@ Short hand for common tasks in Copilot. So that I don't have to type out a full 
 
 ## FAQ
 1. How does GitHub Copilot Chat differ from ChatGPT?
-  - GitHub Copilot chat takes into consideration the coxtext of your codebase and workspace, giveing you more tailored soltinos grounded in the code that you've already written. ChatGPT does not do this.
+    - GitHub Copilot chat takes into consideration the context of your codebase and workspace, giving you more tailored solutions grounded in the code that you've already written. ChatGPT does not do this.
 
 ## Best Practices
-https://docs.github.com/en/copilot/using-github-copilot/best-practices-for-using-github-copilot
+- https://docs.github.com/en/copilot/using-github-copilot/best-practices-for-using-github-copilot
