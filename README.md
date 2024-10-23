@@ -23,13 +23,31 @@ That's all!
 What to show:
 
 ### Inline <!-- 5 min -->
-## point.py
-1. create a file called point.py
+<!--
+Hit on:
+- context (file name, existing code, etc.)
+- how to accept suggestions (tab)
+- how to flip through suggestions
+- encourages commenting
+- show generating boiler plate
+  - getters and setters etc.
 
-### class point
+Not sure if I should hit on:
+- writing unit tests
+
+
+
+-->
+#### point.py
+1. create a file called point.py
+    > file name is part of context!
+
+##### class point
 1. start a new comment "create a class"
     > If the suggestions are wrong or I don't like them, just keep typing!
 1. tab (to autocomplete)
+1. add "Should include getters, setters and a to_string method" to your comment
+    > the clearer I am, the more helpful Copilot can be!
 1. on the next line type "class Point:"
 1. tab
     > GitHub Copilot draws on information from our workspace, so it is inferring what we want based on what we have already done and what it can see in other open files. in this case, file name is part of it.
@@ -41,16 +59,16 @@ What to show:
 1. hit enter and press tab
     > this is again inferring that copilot is doing along with starting to showcase actual coding.
 
-### from direction to development
-1. write a new comment "unit test function to verify line.length == point.distance"
-1. hit enter and press tab
-
-### class line
+##### class line
 1. start a new comment "create a class"
 1. tab
 1. on the next line type "class"
 1. tab
     > copilot will essentially use all the workspace context, including code we've already written in this file, to determine how to generate new code. notice how copilot automatically added a tostring method (following a pattern it recognized from above) and it utilizes the distance method we defined automatically.
+
+##### from direction to development
+1. write a new comment "unit test function to verify line.length == point.distance"
+1. hit enter and press tab
 
 ### Chat <!-- 10 min -->
 #### Explain
