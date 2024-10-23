@@ -47,11 +47,11 @@ Not sure if I should hit on:
 1. Add "# should include getters, setters and a toString method" to your comment
     > The clearer and more descriptive I am, the more helpful Copilot can be!
 1. Type "class Point:" and hit enter
-    > Copilot draws on information from our workspace, so it is inferring what we want based on what we have already done and what it can see in other open files. in this case, file name is part of it.
+    > Copilot draws on all information in our file to build its context, so it can infer what we want based on what we have already commented and coded. Remember, file name is part of context!
 1. Accept all getters, setters and toString
-    > Copilot expedites "boring" coding. Repetitive, boilerplate tasks. This gives us more time for the tasks and coding we enjoy.
+    > Copilot expedites "boring" coding (repetitive, boilerplate tasks). This gives us more time for the tasks and coding we enjoy.
 1. Start a new comment "# calculate the..." (we're going to create a distance function)
-    > Copilot is, once again, inferring what we might want here. Additionally, Copilot is starting to generate actual code / algorithms.
+    > Copilot is, once again, inferring what we might want here.
 
 ##### class line
 1. Start a new comment "# create a class..."
@@ -63,6 +63,21 @@ Not sure if I should hit on:
 1. hit enter and press tab -->
 
 ### Copilot Chat <!-- 10 min -->
+<!--
+Hit on:
+- how context differs from Code completions
+- How to accept changes from chat
+- /clear and the `+` button
+- history
+- models drop down +  attach files
+- slash commands, and @'s
+-->
+#### Generate
+##### .github/workflows/main.yml
+> Copilot works on more than just traditional code. Even with operational tasks and files, Copilot can help.
+1. create a file main.yml
+1. ask copilot chat to "write me a starter github actions file"
+
 #### Explain
 1. open server.rs
 1. ask copilot chat what this file is doing <!-- maybe show #file:server.rs here and show just highlighting and open windows -->
@@ -83,14 +98,9 @@ Not sure if I should hit on:
 1. navigate to sql.py
 1. ask copilot chat to identify any security vulnerabilities it sees
 
-#### Generate
-##### .github/workflows/main.yml
-> Copilot works on more than just traditional code. Even with operational tasks and files, Copilot can help.
-1. create a file main.yml
-1. ask copilot chat to "write me a starter github actions file"
 
-### @, # and / <!-- 5 min -->
-#### \#
+#### @, # and / <!-- 5 min -->
+##### \#
 We can use `#` to reference files or selections. Essentially, determine what context to use to answer the question we are asking. Note; #web for web search.
 
 1. Try this in chat: 
@@ -98,10 +108,10 @@ We can use `#` to reference files or selections. Essentially, determine what con
 1. then try this
     - #web what is the latest version of Node.js?
 
-#### @
+##### @
 Called "participants". Use if you're looking to ask about a specific topic or domain. Example @docker. Copilot extensions can also provide more chat participants. Personally I don't use it much but it's there!
 
-#### /
+##### /
 Short hand for common tasks in Copilot. So that I don't have to type out a full paragraph.
 - `/tests` - writes tests
 - `/explain` - explain code
