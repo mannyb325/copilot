@@ -18,11 +18,7 @@ After install, Copilot is 100% ready to go. Start coding to use inline completio
 That's all!
 
 ## Use
-> at some point show writing boilerplate like Colin did. In the point class, accept all the values and the getters, setters, etc.
-
-What to show:
-
-### Inline <!-- 5 min -->
+### Code completion <!-- 5 min -->
 <!--
 Hit on:
 - context (file name, existing code, etc.)
@@ -36,49 +32,42 @@ Hit on:
 Not sure if I should hit on:
 - writing unit tests
 -->
+> [!NOTE]
+> Although I do not explicitly list it in each step below, there is an implied acceptance of Copilot's suggestions at the end of each step.
+
+
 #### point.py
-1. create a file called point.py
-    > file name is part of context!
+1. navigate to point.py
+    > file name is part of the context Copilot uses!
 
 ##### class point
-1. start a new comment "create a class"
+1. start a new comment "# create a class..."
     > If the suggestions are wrong or I don't like them, just keep typing!
-1. tab (to autocomplete)
-1. add "Should include getters, setters and a to_string method" to your comment
-    > the clearer I am, the more helpful Copilot can be!
-1. on the next line type "class Point:"
-1. tab
-    > GitHub Copilot draws on information from our workspace, so it is inferring what we want based on what we have already done and what it can see in other open files. in this case, file name is part of it.
-1. write a new comment "tostring method"
-1. hit enter and press tab
-    > this is one of the smaller use cases for copilot but one of the most common and most effective. Removing boilerplate work, work that is needed but boring, repetitive and not "true coding"
-1. start a new comment "calculate the"
-1. tab
-1. hit enter and press tab
-    > this is again inferring that copilot is doing along with starting to showcase actual coding.
+1. add "# should include getters, setters and a toString method" to your comment
+    > The clearer and more descriptive I am, the more helpful Copilot can be!
+1. on the next line type "class Point:" and hit enter
+    > Copilot draws on information from our workspace, so it is inferring what we want based on what we have already done and what it can see in other open files. in this case, file name is part of it.
+1. accept all getters, setters and toString
+    > Copilot expedites "boring" coding. Repetitive, boilerplate tasks. This gives us more time for the tasks and coding we enjoy.
+1. start a new comment "calculate the..." (we're going to create a distance function)
+    > this is again inferring that Copilot is doing along with starting to showcase actual coding.
 
 ##### class line
 1. start a new comment "create a class"
-1. tab
 1. on the next line type "class"
-1. tab
     > copilot will essentially use all the workspace context, including code we've already written in this file, to determine how to generate new code. notice how copilot automatically added a tostring method (following a pattern it recognized from above) and it utilizes the distance method we defined automatically.
 
 <!-- ##### from direction to development
 1. write a new comment "unit test function to verify line.length == point.distance"
 1. hit enter and press tab -->
 
-### Chat <!-- 10 min -->
+### Copilot Chat <!-- 10 min -->
 #### Explain
 1. open server.rs
-1. ask copilot chat what this file is doing
-<!-- maybe show #file:server.rs here and show just highlighting and open windows -->
+1. ask copilot chat what this file is doing <!-- maybe show #file:server.rs here and show just highlighting and open windows -->
 #### Improve
-1. ask copilot chat it if there are any ways we can improve the code
-<!-- maybe talk here about how being specific in our prompt will help give more accurate, reliable answers. the less vague our ask, the better -->
-<!-- ex. how could I improve this file? I want to make this code run as efficiently as possible and I want to follow best practices -->
-1. ask chat how to implement thread pools and accept changes
-<!-- this is a good time to show the full overwrite, vs copy paste -->
+1. ask copilot chat it if there are any ways we can improve the code <!-- maybe talk here about how being specific in our prompt will help give more accurate, reliable answers. the less vague our ask, the better --> <!-- ex. how could I improve this file? I want to make this code run as efficiently as possible and I want to follow best practices -->
+1. ask chat how to implement thread pools and accept changes <!-- this is a good time to show the full overwrite, vs copy paste -->
 
 #### Translate
 1. ask copilot chat to turn our rust code into python
