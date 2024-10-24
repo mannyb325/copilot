@@ -12,8 +12,8 @@
 
 Easy as that!
 
-## Familiarize
-After install, Copilot is 100% ready to go. Start coding to use inline completions or click the "Chat" icon on the Activity Bar to chat.
+## Familiarize (for VS Code)
+After install, Copilot is 100% ready to go. Start coding to use Code completions or click the "Chat" icon on the Activity Bar to use Copilot Chat.
 
 That's all!
 
@@ -28,9 +28,6 @@ Hit on:
 - encourages commenting
 - show generating boiler plate
   - getters and setters etc.
-
-Not sure if I should hit on:
-- writing unit tests
 -->
 
 > [!NOTE]
@@ -51,7 +48,7 @@ Not sure if I should hit on:
 1. Accept all getters, setters and toString
     > Copilot expedites "boring" coding (repetitive, boilerplate tasks). This gives us more time for the tasks and coding we enjoy.
 1. Start a new comment "# calculate the..." (we're going to create a distance function)
-    > Copilot is, once again, inferring what we might want here.
+    > Copilot is, once again, inferring what we might want here based on the context it has.
 
 ##### class line
 1. Start a new comment "# create a class..."
@@ -66,37 +63,44 @@ Not sure if I should hit on:
 <!--
 Hit on:
 - how context differs from Code completions
+  - include how once there are prev messages in a hat, those act as context too
 - How to accept changes from chat
 - /clear and the `+` button
-- history
+- history of chats
 - models drop down +  attach files
 - slash commands, and @'s
 -->
 #### Generate
-##### .github/workflows/main.yml
 > Copilot works on more than just traditional code. Even with operational tasks and files, Copilot can help.
+
+##### Infra as Code
+1. Navigate to iac.tf
+1. Ask Copilot chat to "write a terraform file that creates a webapp and sql DB in Azure for me"
+    > In Copilot Chat have various options for how to accepts suggested code.
+
+<!-- ##### .github/workflows/main.yml
 1. create a file main.yml
-1. ask copilot chat to "write me a starter github actions file"
+1. ask copilot chat to "write me a starter github actions file" -->
 
 #### Explain
-1. open server.rs
-1. ask copilot chat what this file is doing <!-- maybe show #file:server.rs here and show just highlighting and open windows -->
+1. Open server.rs
+1. Ask Copilot Chat what this file is doing <!-- maybe show #file:server.rs here and show just highlighting and open windows -->
 #### Improve
-1. ask copilot chat it if there are any ways we can improve the code <!-- maybe talk here about how being specific in our prompt will help give more accurate, reliable answers. the less vague our ask, the better --> <!-- ex. how could I improve this file? I want to make this code run as efficiently as possible and I want to follow best practices -->
-1. ask chat how to implement thread pools and accept changes <!-- this is a good time to show the full overwrite, vs copy paste -->
+1. Ask Copilot Chat it if there are any ways we can improve the code <!-- maybe talk here about how being specific in our prompt will help give more accurate, reliable answers. the less vague our ask, the better --> <!-- ex. how could I improve this file? I want to make this code run as efficiently as possible and I want to follow best practices -->
+1. Ask chat how to implement thread pools and accept changes <!-- this is a good time to show the full overwrite, vs copy paste -->
 
 #### Translate
-1. ask copilot chat to turn our rust code into python
+1. Ask Copilot Chat to turn our rust code into python
 
 #### Brainstorm
-1. ask copilot chat: if I'm looking to create a webserver in python, how should I go about it? should I be creating it from scratch like I'm doing here?
-1. ask it about the differences between the different frameworks it suggests.
-1. ask it which to use if I'm looking to run a simple blog server and I don't have much coding experience.
+1. Ask Copilot Chat: if I'm looking to create a webserver in python, how should I go about it? should I be creating it from scratch like I'm doing here?
+1. Ask it about the differences between the different frameworks it suggests.
+1. Ask it which to use if I'm looking to run a simple blog server and I don't have much coding experience.
 
 #### Secure
 > Copilot can help identify and mitigate security vulnerabilities
-1. navigate to sql.py
-1. ask copilot chat to identify any security vulnerabilities it sees
+1. Navigate to sql.py
+1. Ask copilot chat to identify any security vulnerabilities it sees
 
 
 #### @, # and / <!-- 5 min -->
