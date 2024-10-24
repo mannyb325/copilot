@@ -100,15 +100,15 @@ Hit on:
 #### Secure
 > Copilot can help identify and mitigate security vulnerabilities
 1. Navigate to sql.py
-1. Ask copilot chat to identify any security vulnerabilities it sees
+1. Ask Copilot Chat to identify any security vulnerabilities it sees
 
 
 #### @, # and / <!-- 5 min -->
 ##### \#
-We can use `#` to reference files or selections. Essentially, determine what context to use to answer the question we are asking. Note; #web for web search.
+We can use `#` to reference files or selections. Essentially, determine what context to use to answer the question we are asking. Note: #web for web search.
 
 1. Try this in chat: 
-    - #what is the latest version of Node.js?
+    - what is the latest version of Node.js?
 1. then try this
     - #web what is the latest version of Node.js?
 
@@ -123,7 +123,7 @@ Short hand for common tasks in Copilot. So that I don't have to type out a full 
 
 ## FAQ
 1. How does GitHub Copilot Chat differ from ChatGPT?
-    - GitHub Copilot chat takes into consideration the context of your codebase and workspace, giving you more tailored solutions grounded in the code that you've already written. ChatGPT does not do this.
+    - GitHub Copilot Chat takes into consideration the context of your codebase and workspace, giving you more tailored solutions grounded in the code that you've already written. ChatGPT does not do this.
 
 ## Best Practices
 - https://docs.github.com/en/copilot/using-github-copilot/best-practices-for-using-github-copilot
