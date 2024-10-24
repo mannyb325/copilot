@@ -76,7 +76,7 @@ Hit on:
 ##### Infra as Code
 1. Navigate to iac.tf
 1. Ask Copilot chat to "write a terraform file that creates a webapp and sql DB in Azure for me"
-    > In Copilot Chat have various options for how to accepts suggested code.
+    > In Copilot Chat, we have various options for how to accepts suggested code.
 
 <!-- ##### .github/workflows/main.yml
 1. create a file main.yml
