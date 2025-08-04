@@ -99,4 +99,4 @@ Short hand for common tasks in Copilot. So that I don't have to type out a full 
     - GitHub Copilot Chat takes into consideration the context of your codebase and workspace, giving you more tailored solutions grounded in the code that you've already written. ChatGPT does not do this.
 
 ## Best Practices
-- https://docs.github.com/en/copilot/using-github-copilot/best-practices-for-using-github-copilot
+- https://docs.github.com/en/copilot/using-github-copilot/best-practices-for-using-github-copilot  
