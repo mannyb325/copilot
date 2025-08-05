@@ -1,6 +1,5 @@
 import pytest
 from unittest.mock import patch
-from unittest.mock import patch
 from point import print_names, print_random_name
 
 class TestPrintNames:
