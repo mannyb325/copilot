@@ -1,0 +1,35 @@
+# Example terraform.tfvars file
+# Copy this file to terraform.tfvars and modify the values as needed
+
+# Basic image configuration
+image_name = "my-app"
+image_tag  = "v1.0.0"
+
+# Build configuration
+build_context    = "."
+dockerfile_path  = "Dockerfile"
+
+# Build arguments (optional)
+build_args = {
+  NODE_ENV = "production"
+  VERSION  = "1.0.0"
+}
+
+# Image labels (optional)
+labels = {
+  maintainer   = "your-email@example.com"
+  version      = "1.0.0"
+  description  = "My demo application"
+}
+
+# Container configuration (optional)
+create_container = true
+container_port   = 8080
+external_port    = 8080
+restart_policy   = "unless-stopped"
+
+# Environment variables for the container (optional)
+environment_variables = [
+  "ENV=production",
+  "PORT=8080"
+]
