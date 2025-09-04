@@ -1,0 +1,10 @@
+# Example Terraform variables file
+# Copy this file to terraform.tfvars and modify as needed
+
+# Whether to deploy a container after building the image
+deploy_container = false
+
+# You can also override these by modifying the locals block in iac.tf:
+# image_name = "my-custom-server"
+# image_tag = "v1.0.0"
+# app_port = 9000

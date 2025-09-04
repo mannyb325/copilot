@@ -102,6 +102,56 @@ Hit on:
 1. Navigate to sql.py
 1. Ask Copilot Chat to identify any security vulnerabilities it sees
 
+### Infrastructure as Code with Docker <!-- NEW SECTION -->
+> Terraform configuration for building and managing Docker images
+
+This repository includes Terraform configuration that demonstrates how to integrate Docker image building into infrastructure-as-code workflows.
+
+#### Files
+- `iac.tf` - Main Terraform configuration for Docker image building
+- `Dockerfile` - Example Dockerfile for the Rust server application
+- `tcp.rs` - Supporting module for the Rust server
+
+#### Usage
+1. **Initialize Terraform**
+   ```bash
+   terraform init
+   ```
+
+2. **Plan the deployment**
+   ```bash
+   terraform plan
+   ```
+
+3. **Build the Docker image**
+   ```bash
+   terraform apply
+   ```
+
+4. **Optional: Deploy container**
+   ```bash
+   terraform apply -var="deploy_container=true"
+   ```
+
+5. **Clean up resources**
+   ```bash
+   terraform destroy
+   ```
+
+#### What it does
+- Builds a Docker image for the Rust TCP server
+- Uses multi-stage build for optimized image size
+- Configures proper labeling and tagging
+- Optionally deploys a container with port mapping
+- Demonstrates infrastructure-as-code best practices
+
+#### Customization
+You can customize the build by modifying variables in `iac.tf`:
+- `image_name` - Change the Docker image name
+- `image_tag` - Set a different tag
+- `app_port` - Configure port mapping
+- `deploy_container` - Control container deployment
+
 
 #### @, # and / <!-- 5 min -->
 ##### \#
