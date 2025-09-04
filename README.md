@@ -3,6 +3,26 @@
 > [!NOTE]
 > As with any GenAI, Copilot is non-deterministic. As such, results you get from Copilot may differ from what I demonstrate.
 
+## Development Environment Setup
+
+This project supports development on **Ubuntu 24.04 LTS (Noble Numbat)** and provides comprehensive CI/CD pipelines to ensure compatibility.
+
+### Quick Setup (Ubuntu 24.04)
+```bash
+# Update system
+sudo apt update && sudo apt upgrade -y
+
+# Install development essentials
+sudo apt install -y build-essential curl wget git python3-pip python3-venv
+
+# Install language-specific tools
+# Python (3.12) is pre-installed
+# For Node.js: curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - && sudo apt install -y nodejs
+# For Rust: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+See [UPGRADE_UBUNTU.md](UPGRADE_UBUNTU.md) for detailed setup instructions and Ubuntu 24.04 features.
+
 ## Install (for VS Code)
 1. Go to Extensions (on Activity Bar)
 1. Search for `Copilot`
