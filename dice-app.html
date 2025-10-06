@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roll Churn Risk Predictor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .title {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+
+        .roll-button {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        .roll-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+        }
+
+        .roll-button:active {
+            transform: translateY(0);
+        }
+
+        .result-card {
+            display: none;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 20px;
+            border: 3px solid;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .result-card.show {
+            display: block;
+        }
+
+        .low-risk {
+            background-color: #e8f5e8;
+            border-color: #4CAF50;
+            color: #2e7d32;
+        }
+
+        .medium-risk {
+            background-color: #fff8e1;
+            border-color: #FFC107;
+            color: #f57c00;
+        }
+
+        .high-risk {
+            background-color: #ffebee;
+            border-color: #f44336;
+            color: #c62828;
+        }
+
+        .dice-number {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .risk-level {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .risk-description {
+            font-size: 1em;
+            opacity: 0.8;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .dice-animation {
+            font-size: 4em;
+            margin: 20px 0;
+            animation: roll 0.6s ease;
+        }
+
+        @keyframes roll {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(90deg); }
+            50% { transform: rotate(180deg); }
+            75% { transform: rotate(270deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🎲 Dice Roll</h1>
+        <p class="subtitle">Churn Risk Predictor</p>
+        
+        <button class="roll-button" id="rollButton" onclick="rollDice()">
+            Roll Dice
+        </button>
+
+        <div class="dice-animation" id="diceAnimation" style="display: none;">🎲</div>
+
+        <div class="result-card" id="resultCard">
+            <div class="dice-number" id="diceNumber"></div>
+            <div class="risk-level" id="riskLevel"></div>
+            <div class="risk-description" id="riskDescription"></div>
+        </div>
+    </div>
+
+    <script>
+        function rollDice() {
+            // Disable button during animation
+            const button = document.getElementById('rollButton');
+            const resultCard = document.getElementById('resultCard');
+            const diceAnimation = document.getElementById('diceAnimation');
+            
+            button.disabled = true;
+            button.textContent = 'Rolling...';
+            resultCard.classList.remove('show');
+            
+            // Show dice animation
+            diceAnimation.style.display = 'block';
+            
+            setTimeout(() => {
+                // Generate random number between 1 and 6
+                const diceRoll = Math.floor(Math.random() * 6) + 1;
+                
+                // Hide animation
+                diceAnimation.style.display = 'none';
+                
+                // Determine risk level based on dice roll
+                let riskLevel, riskClass, riskDescription;
+                
+                if (diceRoll <= 2) {
+                    riskLevel = 'Low Risk';
+                    riskClass = 'low-risk';
+                    riskDescription = 'Customer is likely to stay with minimal churn risk';
+                } else if (diceRoll <= 4) {
+                    riskLevel = 'Medium Risk';
+                    riskClass = 'medium-risk';
+                    riskDescription = 'Customer may churn - proactive engagement recommended';
+                } else {
+                    riskLevel = 'High Risk';
+                    riskClass = 'high-risk';
+                    riskDescription = 'Customer likely to churn - immediate intervention required';
+                }
+                
+                // Update result display
+                document.getElementById('diceNumber').textContent = diceRoll;
+                document.getElementById('riskLevel').textContent = riskLevel;
+                document.getElementById('riskDescription').textContent = riskDescription;
+                
+                // Remove previous risk classes and add new one
+                resultCard.className = 'result-card show ' + riskClass;
+                
+                // Re-enable button
+                button.disabled = false;
+                button.textContent = 'Roll Again';
+            }, 600);
+        }
+    </script>
+</body>
+</html>
